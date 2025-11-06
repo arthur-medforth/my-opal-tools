@@ -50,7 +50,7 @@ async def todays_date(parameters: DateParameters):
     today = datetime.datetime.now()
     
     # Format the date
-    formatted_date = today.strftime(date_format)
+    formatted_date = today.strftime(date_format) # type: ignore
     
     return {
         "date": formatted_date,
